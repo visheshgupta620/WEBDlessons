@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Username: <%= user.username %> </h3>
+        <p>Password: <%= user.password %></p>
+        <p>Age: <%= user.age %></p>
+        <p>Address: <%= user.address %></p>
+        <a href="/users/<%= user.id %>/edit">Update Info</a>
+    </div>
+</body>
+</html>

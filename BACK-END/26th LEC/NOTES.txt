@@ -1,0 +1,45 @@
+For express to interact with MongoDB , we use mongoose
+
+
+(ejs ki need nhi)(npm i mongoose krna pdega)
+mongoose site se code dekhna
+
+            (ORM -> object relation mapper)(SQL databases)
+mongoose -> (ODM -> object document mapper)(NO SQL DB KE LIYE LIKE MongoDB)
+
+
+static-> class ke name se call hote bas
+
+
+mongoose->
+  schema  -> structure of DB
+  model   -> class JS jaise (jiske andar functions hai to interact with MongoDB)
+
+
+
+
+  objectname.save()         ispe hum .then lga skte            //save krne ke liye
+
+
+to create :                         //saare hi ye functions promises return krte 
+classname.create() .then({})
+
+to read :
+    like MongoDB  
+     using find({}) .then({})              find ke andar khali {} de to saara data mil jata
+
+to update:
+   user.updateOne(filter,update) .then({})        
+   user.updateMany()
+
+
+to delete:
+    user.deleteOne({}) .then({})
+    user.deleteMany({})
+
+
+
+to uniquely identify we have _id for each document in MongoDB
+    user.findbyId(id)
+    user.findbyIdAndUpdate(id,{})
+    user.findbyIdAndDelete(id)

@@ -1,0 +1,25 @@
+input me name attribute use krte (vhi key bnta hai baad me)
+
+
+req.params -> string ki form me deta hai
+
+
+
+const {username, password} = req.body;    //jab form me post request se data nikal rhe ho to req.body use krte
+            //curly brackets me jo input tag bnate hue name attribute me daala hoga vo aate hai
+
+
+
+
+
+res.redirect('route') -> GET request bhejta hai default 
+
+
+
+
+method override -> npm hai   (middleware function hi hai)
+            post ko override krne ke liye patch,put,delete se (values vagara update krni ho tab patch use krte)
+
+            npm i method-override
+            const methodOverride = required('method-override')
+            app.use(methodOverride('_method))

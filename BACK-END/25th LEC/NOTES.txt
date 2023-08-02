@@ -1,0 +1,89 @@
+CSR  -> client side rendering  (Api vala kaam )   -> single page me bnate hai bina refresh kare
+SSR  -> server side rendering  (server ko request bhejre jab browser se)
+
+
+csr me ejs ki need nahi
+
+
+
+
+
+
+
+MONGO DB    -> DBMS            
+key value pairs me data store hota hai (table form me nahi)
+
+
+
+
+JSON -> READABLE BY HUMAN AND machines
+BSON -> BINARY ME HOTA (ONLY READABLE BY machines)
+MONGO DB
+data stored in the form of BSON
+
+
+
+Interacting with mongodb: - 
+    1. using mongoshell                    (FOR HUMAN)
+    2. GUI -> Graphic User Interface       (FOR HUMAN)
+    3. mongoose                            (FOR machines like express)
+
+
+
+
+    document -> single object structure
+    collection -> group of documentS (multiple objects)
+    database -> group of collections 
+
+    key   -> field bolte
+    value -> value
+
+
+
+  CMD:
+    show dbs -> to show all databases
+    use name -> vhi db pe aaajayega //agar existing nhi hoga to naya create kardega
+    show collections  -> show all collections
+    .exit -> database se bahr ajayega poore
+
+
+    to insert:
+    db.collectionname.insertOne(document name)
+    db.collection.insertMany(array of documents)    -> multiple insert krne ko
+
+    to read:
+    db.collectionname.find({}) -> sara data milega
+    db.collectionname.find({title:'fall'}) -> sirf jaha title fall hoga uska data milega
+
+    to update:
+    db.collectionname.updateOne({filter},{update})       update vale {} me $set use krna pdega {$set:{rating:8}}
+    db.collectionname.updateMany
+
+
+    to delete:
+    db.collectionname.deleteOne()             //sirf pehla jo conditions match krega vo delete hoga  
+    db.collectionname.deleteMany()            //jitne bhi conditions match kr rhe honge sab delete hojayenge
+                                ({})     //saare delete kar dega
+
+
+
+
+
+
+
+
+OPERATORS :                              jab bhi use krenge iske liye bhi {} use krna pdega   eg.   db.movies.find({year:{$gt:2005}}) greater than 2005 year vale aajayenge
+           $eq               equal
+           $gt               greater than
+           $lt               less than
+           $gte              greater than equal to
+           $lte              less than equal to
+           $and                                                eg.     db.movies.find({$and:[{year:{$in:[2005,2008]}},{isWatched:true}]})
+           $or
+           $not
+           $nor
+           $in
+           $nin              not in
+
+   $set   -> to add a field
+   $unset -> to remove a field

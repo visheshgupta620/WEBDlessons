@@ -1,0 +1,79 @@
+express  -> framework
+
+
+get -> bas server se data mangana ho tab
+post -> agar kuch change krna ho server pe tab 
+
+app.use()  -> iss se get post dono request chlegi isme
+
+
+
+
+req-> request
+res-> response
+                       dono hi objects hai
+
+
+
+routing -> request handling
+
+
+/ -> home       -> route hote ye ya endpoint bhi bolte
+/page 
+
+
+upar se neeche chlta code , to upar jo mil jayega appropiate vo chlke band hojata
+
+
+.send se html , string , object , object ke andar error
+
+
+
+
+
+html status codes -> mdn pe dekh skte
+
+
+
+
+
+
+
+
+res.json(data);              data kuch bhi object vagara ho skta to server jab chrome pe chlayenge to vo data vaha dikhne lgega
+
+
+
+
+
+QUERY parameter -> query params
+PATH parameter  -> params
+
+if 
+
+    params -> localhost:4000/getData?name=spiderman                  -> QUERY      ? se variable part de skte query me
+URL ->   localhost:4000/getData/spiderman                            -> PARAM      ya aise likh skte params se
+iska route hoga -> ('/getData/:name',()=>{        //name ya kuch bhi likh skte variable hai //kuch bhi variable bnana ho to uss se pehle : lgana pdega jaise isme :name isliye name variable hua
+
+                    })
+
+              query ya param kuch bhi use kar skte
+
+
+
+
+
+
+
+
+
+templates -> ejs , pug , hbs etc 
+   ejs -> javascript pe bana hua
+
+
+
+
+
+
+ejs ke html tags use krne pdenge         <%  opening tag         %> closing tag
+                                         <%= show bhi krna ho tab =

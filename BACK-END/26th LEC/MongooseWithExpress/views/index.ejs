@@ -1,0 +1,18 @@
+<%- include('./partials/header')%>
+
+
+    <% for(let user of users){ %>
+        <div class="box">
+            <h1><%-user.name%></h1>
+            <p><%-user.age%></p>
+            <p><%-user.email%></p>
+            <p><%-user.contact%></p>
+            <form action="/user/<%- user._id %>?_method=DELETE" method="post">
+                <button>Delete</button>
+            </form>
+        </div>
+        <% } %>
+        <a href="/user/new">Add new user</a>
+
+
+<%- include('./partials/footer')%>

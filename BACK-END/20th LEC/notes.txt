@@ -1,0 +1,52 @@
+this keyword ko normally likhe to vo window ko point krta tha 
+to hum implicitly kisi aur pe point kra dete the
+
+ab hum explicit krenge :-
+bind()   keyword se
+
+
+
+
+
+BACKEND STARTS ******************
+
+                            browser
+               layout engine         js engine
+
+chrome          Blink                 v8
+firefox         Gecko                 Spider Monkey
+edge            trident               Craker
+
+
+
+NODE JS -> 
+   pehle js sirf browser me console me use kr sakte the , fir ek alg se enviroment create kiya js run krne ke liye (runtime enviroment) yhi hai node js
+
+
+
+                 browser/console                                        NODE
+                window(global object)                                  global
+                Document API                                             X(nhi hota)
+                Fetch API                                                X
+                JS RUN                                                 JS run
+                File System X                                          File System
+
+terminal me run hota
+ls se poori directory i.e. sari files dikhti
+node fir file ka naam likhe to run hota
+
+
+
+
+kisi file ke function ko doosre file me use krne ke liye :
+module.exports = {
+
+}   //object
+
+aur pakadne ke liye :
+const objkanaam = require('./math')
+
+
+
+
+jo file se export krte to jab require lagyenge to vo poori file run hoti to agar koi console statement ho to vo bhi run hogi export hone ke alava

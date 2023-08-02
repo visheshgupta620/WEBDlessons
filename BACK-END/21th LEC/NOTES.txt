@@ -1,0 +1,39 @@
+file system -> 
+  node ki documentation hoti , inbuilt functions use krne ke liye    // for eg. -> read and write and path
+        const fs = require('fs');
+
+        for path : 
+               const path = require('path');
+
+        __dirname -> current directory ka loc ajayega
+                      path.join('data','file1')                   \\ dal dega (double reverse slash)
+        
+        read aur write dono hi asynchronous manner me chlte to promise vagara bnane padte
+        //write se sirf new file me likh sakte (append nhi kar skte) agar exisiting me try kre to overwrite kardega
+
+
+
+arr.sort((a,b)=>a-b)         //increasing order
+
+arr.sort((a,b)=>b-a)         //decreasing order
+
+
+
+
+
+
+NPM   -> node package manager  (website hai name change hota rehta)  //node ke saath in built download ho jata
+ external cheeze use krne ke liye use krte
+
+ terminal me                    (first application vale folder me try kar rkha)
+ cd.. cd vagra se file pe jane ke baad
+ npm init
+ sari cheeze fill fir ek .json file bnegi bahot important hai vo
+
+
+
+
+
+EXPRESS     -> nodejs pe build framewok hai
+   isko bhi terminal pe npm ki tarah download fir use
+   server vagara bnane ke liye express hi use hota 

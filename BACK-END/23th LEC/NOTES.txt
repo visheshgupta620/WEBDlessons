@@ -1,0 +1,67 @@
+partials -> repeating part jo ho ejs code ka usko isme daal skte aur jha jha chiye ho vha bas uss folder ko link krdenge
+using include 
+<% - include('folder location')
+
+
+render -> kisi html ya ejs file ko chlane ke liye js me use hota
+
+
+  ***  res.render('random',{randomnum});   //random ejs vali ko render krega + random vale page pe num ko use kar payenge aise pass kare to
+                     //object pass kiya hai to aise likhenge to key aur value dono hi randomnum hai
+
+
+
+
+  jaise humne issme folders bnaye hai yhi layout follow hota hai kuch bhi app aur sites bnate hue
+
+  CSS AUR JS store kar skte in public named folder fir usko hmare script me chlane ke liye 
+  app.use(express.static(path.join(__dirname,'public')));   //taki public vale folder ka link ban jaye chahe khi se bhi run kri ho file
+
+
+
+
+
+
+
+
+
+                    GET                       VS                          POST
+             used to retrieve data                          used to make some changes on server side
+             data is visible in URL to user                       data is not visible in URL to user
+             data is sent as query parameter                      data is sent in req.body
+             data is sent as plain string                         data can be sent in different forms  eg. JSON,text,formdata etc
+             there is a limit to send data                        there is no limit
+
+
+
+
+
+
+app.use()
+
+form me action -> jis route pe jaye submit hone pe
+form me method -> post or get
+form me name attribute -> key hota hmare key value pair me input ke
+
+
+
+post request me :
+middleware :         basically data pakadke late hmare pass
+
+         express.urlencoded()         -> URL ya like form ka data bhejre tab ye
+         express.json()               -> json data ho to ye
+
+
+
+
+
+
+
+
+
+    restful routing ->                                 ya to simple get post se kaar skte ya iss se (ye convinient hai)
+                       app.get     -> GET request
+                       app.post    -> POST request
+                       app.delete  -> to delete
+                       app.patch   -> to update
+                       app.put     -> to update

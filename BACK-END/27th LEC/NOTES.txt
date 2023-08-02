@@ -1,0 +1,16 @@
+MVC structure -> model views controller
+
+
+
+seeding -> program testing ke liye dummy data bhejne ko bolte
+
+
+
+header aur footer partial me jo bnate the vaise nhi krte , we use npm i ejs-mate
+fir,
+      app.engine('ejs',ejsMate);
+      
+
+buy now pe ke baad :
+      left me poora card ,
+      right me review , range for stars , comments 
