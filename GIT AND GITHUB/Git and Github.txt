@@ -1,0 +1,16 @@
+git init   1st time
+
+git add.             . means all
+git commit -m      (m->message(lec1 lec2))
+git remote add origin link           (link repository ka)
+git push-u origin master
+
+
+
+
+
+1st time ke bad
+
+git add.
+git commit-m"
+git push

@@ -1,0 +1,179 @@
+git init   1st time
+
+git add .             . means all
+git commit -m      (m->message(lec1 lec2))
+git remote add origin link           (link repository ka)
+git push-u origin master
+
+
+
+
+
+1st time ke bad
+
+git add.
+git commit-m"
+git push
+
+
+
+
+
+
+
+Version Control System (VCS) :                            => Linux , IOS , Windows
+
+
+        
+        
+
+
+GIT is a distributed version control system.
+        
+
+
+$ls --> saari files
+$mkdir name     -> to create a directory
+$cd nameofdirectory   -> uske andar jane ke liye
+$touch file.txt  -> to create a new file 
+$cat > file.txt   ->file bna bhi dega aur khol bhi dega  
+
+
+
+
+folder ke andar aane ke baad :-
+ git init -> initialise kra git ko
+ git status -> to check status of your directory or folder
+ 
+ git add file    -> staging area me layenge aage kuch work krna chahe to
+ git add .       -> saari files ko staging area me daal dega
+
+
+          jab file staging area me hogi koi tabhi git usse track kar payega
+
+ git commit -m "first commit , nothing is here"        //version like copy bnane ke liye 
+ git log    -> poori history ke liye                                id si milti hai hmari files ki iss se
+ git reset  -> saari files staging area se hatt jayega    
+ git diff   id id -> dono id i.e versions ke beech ka difference pta chal jayega 
+ git checkout(comment id/branch name)   -> kisi specific uspe jane ke liye
+
+
+
+
+git -> Linked List
+
+
+
+head aur master 2 pointer chlte hmari stage file pe , 
+master hamesha latest version pe rehta
+aur head ko hum aage piche kr skte versions pee
+
+git log -> id dedega saari alg alg changes ki
+git checkout id -> uss id vale version pe chle jayega head
+head ko vapis latest pe lane ke liye either
+git checkout master kar skte ya latest ki id bhi deke kar skte 
+
+
+Concept of sandboxing -:
+hum master branch ko nhi chedte hamesha nyi branch bnake kaam krte (taki error ho naye me kuch tab bhi pichla vala rahe hmare pass)
+aur agar likhne ke bad nyi branch shi ho to usse master banado . 
+
+
+to create branch   :          branch like nya pointer type smhj skte
+$ git branch new_feature
+
+$ git branch -> sari branch dikha dega aur * jha hoga hum us branch pe honge abhi
+
+git checkout newbranchname  -> new branch pe shift hojayega master se
+
+
+nyi branch ka data success ho to usko main ya master branch pe laaane ke liye   :
+head ko pehle master pe layenge    
+(git checkout master)
+git merge nyivalibranchkaname    -> nyi branch aur master merge mtlb same aajayega master me branch vala data saara
+aur fir uss nyi branch ko remove kardo:  
+git branch -d newbranchkanaam
+
+
+
+
+git push aur pull  :         ****
+git clone LearningGit/ LearningGit-Clone    -> hamare pooore folder or repository ka clone create kar dega
+origin -> parent(jiska clone bnaya) ki reference
+to clone me bhi same ajayega to usme changes kar skte aur fir usko hum apne main i.e. parents me finally change kar skte agar sab sahi raha toh
+to clone ke changes origin me bhejne ke liye:
+$ git push origin new_feature    (hamare origin me new_feature branch aajayegi (aur bhi kuch change krna chahe to kar skte hum fir usme))   ***
+         fir uspe gitcheckout krke vo branch pe jake changes dikh jayenge clone vale aur fir save krne ke liye merge kar skte master me new_feature ko
+   new_feature -> clone ki jis branch me humne changes kiye
+
+
+
+
+agar hum origin me push krne ke baad bhi kuch changes kre to agar vo clone ki branch me bhi show krna to uske liye :(taki sync me rahe)
+$git pull origin master   ->(master me changes merge krne ke baad origin ke)
+
+
+
+
+
+** GITHUB
+github me hum repository clone to kar skte hai but aise directly push nhi kar skte kyunki vo folder hamare nhi to uske liye aise kar skte :
+
+isme request jati owner pe push krne ke liye
+
+git clone githubrepositorykalink
+
+ek baari humne apne system pe koi repository clone krli
+to usme agar kuch changes ho to hume baar baar clone nhi krna
+pull krenge to jo bhi changes hue honge vo hmare me bhi ajayenge
+
+
+
+
+
+* git push origin master -> apni khud ki repository me kuch changes krne ke baad ye likhdenge github pe changes krne ke liye
+
+
+
+apne local folder ko repository me daalne ke liye github pe :
+new repository bnayenge
+
+
+
+
+
+
+
+***  BASICALLY  FOLDER UPLOAD KRNE KE LIYE EKDUM NAYE REPOSITORY ME STEPSS :
+
+first time :
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/visheshgupta620/WEBD-PROJECTS-.git          //repo ka link
+git push -u origin master
+
+next time :
+git add .
+git commit -m "first commit"
+git push
+
+
+
+git status -> status check kr skte files ka (changes jo kre vo dekh skte)
+
+
+kuch changes kre ho files me unhe github pe reflect krne ke liye
+
+git add .
+git commit -m "message"
+git push
+
+
+
+
+
+
+
+
+
