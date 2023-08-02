@@ -1,0 +1,22 @@
+html{
+    font-size: 30px;
+}
+ul li{
+    font-size: 2em;     /*isme har ul ke andar li side double hota jayega*/
+}
+/* ul li{
+    font-size: 2rem;  rem me html upar jo 30 px kra humne uss hisaab se hojayega
+} */
+
+
+/*SIZE SAMHAJNE KE LIYE BEST HAI YE */
+.parent{ 
+    background-color: aqua;
+    height: 70vh;                  /*viewport ke hisaab se 70% screen ki height cover kar lega*/
+    width: 100vw;
+}
+.child{                           /* parent class vala div iska parent hai to % uske hisaab se size dega */
+    background-color: red;
+    height: 100%;                 /* ye parent class vale size ke hisaab se 100% height cover krlega */
+    width: 50%;
+}

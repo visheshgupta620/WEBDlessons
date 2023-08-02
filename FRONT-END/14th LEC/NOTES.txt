@@ -1,0 +1,29 @@
+
+
+
+**Traversing    ->  
+               .parentelement
+               .nextelementsibling
+               .previouselementsibling
+               .children
+
+
+
+**Dynamically creation/deletion -> 
+               .CreateElement                             (to create a new element to be added)(for eg. we want to a <li> to a ul)
+               .append       (better hai append child se) (direct string bhi pass kr skte jo add krni aur koi element bhi)
+               .appendchild                               (element hi pass krna pdta) 
+               .remove                                    (element jo delete krna select krke direct .remove se remove kr skte)
+               .removeelement                             (jo delete krna hai usko select krke uskeparent.removeelement(jo delete krna))
+               .before                                    (kisi specific element ya tag ke pehle add krna ho tab)
+               .after                                     (kisi specific element ya tag ke baaad me add krna ho tab)
+
+
+
+**DOM events ->
+               mouse           eg hover,mouse-over,etc.   (W3SCHOOLS pe dekhlo)
+               keyboard        eg key-down , key-up                
+
+
+
+e.target   (vo poora tag jispe hum e pass kre likhte vakt vo return krta ye) -> this keyword ke jaisa hi hai

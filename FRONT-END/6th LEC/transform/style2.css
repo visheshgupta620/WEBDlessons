@@ -1,0 +1,37 @@
+*{
+    /* perspective: 20px;    z axis pass aajayega iss se */
+    perspective: 800px; 
+}
+.container{
+    height: 400px;
+    width: 200px;
+    border: 2px solid black;
+    margin: auto; /*mid me ho jata ye krne se*/
+    position: relative; /*iss se vo z index me jayega but original position pe bhi baki content nhi jayega kyunki relative hai*/
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+}
+.side-a,.side-b{
+    color: violet;
+    backface-visibility: hidden;  /*backface ni dekhna isiliye hide (jo rotate hoga uska hide hoga)*/
+}
+.side-a{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;  
+    background: url(https://th.bing.com/th/id/OIP.LxFcBx4KwHQKQWcVAaLWDwHaKD?w=124&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-size: cover; 
+    position: absolute;
+}
+.side-b{
+    font-size: 20px;
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    /* top: 2rem; parent me relative diya isliye parent ke according top pe 2 rem chodke move krega neeche , nhi diya hota relative to viewport ke hisaab se krta */
+    transform: rotateY(180deg);
+}
+.container:hover{
+    transform: rotateY(-180deg);
+}

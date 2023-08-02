@@ -1,0 +1,168 @@
+split - array me convert kr dega 
+        var str = "this is a string ";
+        var s =str.split("  ");
+        
+indexof() -    index de dega 
+tolowercase()
+touppercase()
+replace('','')
+replaceAll('','')
+
+
+
+
+
+Objects in JS - key-value pairs
+  var person= {     //object
+    // name:"abc",
+    'full name':"abc",
+    age:25,
+    isAdult:true,
+    marks:[98,40,68]
+    }
+
+
+c++,java -- strong 
+JS,python -- weak with respect to c++ , java
+in js we can use put any values in the variables 
+  eg var a=19;
+         a="str"
+      this will give no error 
+
+
+
+LOOPS :-
+  1)for loop  
+           types:
+                   1)simple loop             for(var i=0;i<arr.length;i++){  console.log(arr[i]);   }
+                   2)for of          used in arrays
+                   3)for in          used for objects
+
+
+
+
+
+functions ->code
+
+
+
+*** hoisting -     code run hota to pehle kisi bhi variable ko undefined milta hai aur uske baad value assign hoti hai (call stack me) ***
+
+
+   we have two phases while running a code   --
+                memory allocation phase            and            code execution phase      
+                                          basically call stack 
+
+
+
+
+scope :  1)functional scope
+         2)block level scope
+
+
+
+
+EQUALITY OPS-
+== -> data type ke hisaab se nhi dekhega , sirf value dekhega . for eg 10 aur '10' true dega
+=== -> data type bhi dekhega  aur value bhi . for eg 10 aur '10' false dega
+
+
+
+
+Lexical environment = 
+
+  har element ke pe khud ke aur uske parent ke elements ka reference hota hai
+
+
+
+
+
+**** pehle variables aur functions ko memory milti hai but undefined isliye   
+         console.log(a);
+         var a=10;
+      iska output undefined ayega kyunki pehle a ko memory milegi uske baad console.log hoga
+
+if we just wrote : 
+          console.log(a);
+      iska output not defined error ayega kyunki a ko memory hi allocate nhi hui kyunki uss name ka koi variable nhi 
+
+and : 
+        var a=10; 
+        console.log(a);
+      this will give regular output 10; ****
+
+
+
+
+VAR vs LET vs CONST     :-
+   
+Recreation  -->                 var - true        let - false          const - false
+    var/let/const  a=10;              
+    var/let/const  a=20;
+
+Re-initialisation  --> 
+    var/let/const a=20;               true              true                   false
+                  a=30;  
+                                         
+
+var ki scope poore code rehti hai  , but let aur const ki scope sirf entity ke andar rehti like if ke andar hai to vhi tak rehti hai .
+  x=10 aur var x=10  --> ek hi baaat hai 
+
+
+
+
+
+ARROW FUNCTION  :       =>            basically a short form to create functions
+      let add=function(a,b){
+               return a+b;
+             }
+
+      let add = (a,b) => a+b;                 // for single line
+      let add = (a,b) => {                    // if multiple lines
+             return  a+b;
+           }
+      let print = item => console.log(item);  //if single parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

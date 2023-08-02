@@ -1,0 +1,4 @@
+HTML IS A TREE LIKE STRUCTURE
+                                 HTML
+                  HEAD                             BODY   
+             MAIN                                      TAGS VGARA

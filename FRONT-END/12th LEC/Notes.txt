@@ -1,0 +1,32 @@
+let obj=Object.create(jis object ka bnana ho(parent));           //class object bnane ke liye joki parent ke elements ko access kr payega
+
+
+isme constructor class ke naam se nhi , constructor word se hi banta
+
+
+get and set keyword hai :    jispe lgega usko ek property  ki tarah access kr skenge ( for eg bina function ke baad () lgaye chl jayga ) 
+
+static keyword --> sirf class ke naam se access kr payenge
+
+
+
+super()   -> parent ka data access krne ke liye (java ki tarah)
+
+
+Destructuring - object ke kisi variable ko koi variable me store krne ke liye
+
+spread operator (...) - hmari ease ke liye 
+rest operator (...)  - multiple arguments ho tab (check in file)
+
+
+
+***IIFEs ->    Immediately Invoked Function Expressions
+          ()
+          (()=>{})
+          (()=>{})()
+
+
+// ways to write async code in sync way   
+               1. callbacks ->nesting of callback function
+               2. promises
+               3. async-await

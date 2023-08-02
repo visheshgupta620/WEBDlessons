@@ -1,0 +1,49 @@
+*** CSS BOX MODEL:
+                    saare ke saare element ek box me hi hote hai hai 
+
+              beech me content fir padding fir border fir margin
+
+
+*** CSS units  :     use vw,vh,rem,em krni chiye taki responsiveness aaye screen ke hisaab se , px vagara fix rehte har screeen ke liye
+        ABSOLUTE : px,cm,mm,in
+        RELATIVE : em,rem,vh,vw,%
+
+     em -> parent element ke hisaab se set krega ;                       eg 2em 
+    rem -> html ke default jo denge document ko uss hisaab se set hoga ; eg 2rem    16px hoti default HTML ki to 2rem se 2*16px hojayegi
+  vh/vw -> viewport ke hisab se size set hojayega ;                        
+      % -> parent element ke hisaab se set hoga ;                        eg 50%
+
+              units.html --> file se ache se samhaj aa jayega yee
+
+
+
+*** Understanding Margins :            margin bhi parent element ke respect me work krta hai
+         margin-left:
+         margin-right:
+         margin-top:
+         margin-bottom:
+                       shorthand :                margin: top bottom left right ;
+                                                  margin:20px                            iss se left right top bottom sab jagah itni hi margin le lega
+                                              or  margin: 10px       20px;
+                                                        top/bottom   left/right
+                                             center dene ke liye : margin: 140px auto ;  auto se left aur right dono equal ho jayenge aur center mil jayega
+
+
+
+
+*** FLOAT PROPERTY    : 
+      CONTENT KO LEFT RIGHT ALIGNMENT DENE KE LIYE USE HOTA         float:left/right        clear: left/right     se clear ho jayega
+          
+
+box kyi baar collapse kr jata float property use krte hue , to solve krne ke liye :  
+                       <div class="clearfix"></div> 
+                          .clearfix{
+                                 clear:both;
+                                 display : block;
+                                   }
+                  or      .classname::after{
+                                          content: "";
+                                          display:block;
+                                          clear="both"
+                                            }
+            

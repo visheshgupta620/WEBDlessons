@@ -1,0 +1,9 @@
+**flex-grow :   parent element ke total size ke hisaaab se uska kuch fraction de skte (fraction units ki tarah (fr))
+          eg 1000px width hai parent , 3 child hai ek me flex-grow="2" aur baki dono me 1 :   to 2 vala parent ka 2/4 (aada) part cover kar lega , aur 1 vale 1/4-1/4
+
+
+**GRIDS   :    LIKE FLEX ME 1 D ALIGN HOTA  (x and y axis)
+               GRID ME 2 D ALIGN KRTE HAI   (rows and columns ke hisaab se)
+           USED to create layouts .
+  grid-template-column
+  grid-template-row

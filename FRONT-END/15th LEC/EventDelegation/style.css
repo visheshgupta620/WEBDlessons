@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid black;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.child{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: yellow;
+    /* float: left; */
+    font-size: 1.4rem;
+}

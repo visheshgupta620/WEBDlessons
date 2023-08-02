@@ -1,0 +1,76 @@
+Jquery :  
+          set of codes we can use in our codes for our ease .
+          for DOM , AJAX REQUEST
+
+          Jquery me work krte hue hamesha jquery wrapper me hona chiye selected tag ya element jo bhi hi to uske liye $ use krte hai console
+          me check krke agar vo jquery wrapper me na ho select krne ke baad
+
+
+        Selectors:   
+           jaise ki Selectors the document.querselector,selectelementbyid unki jagah Jquery me ye use kr skte ->    $('tag')
+                                                   $('tag').first/last -> pehla vala lega sirf  
+
+           .css()  -> iss function se style dete                $('selectjokrna).css('color','red')
+
+           multiple style deni ho to object bnake usme saari properites daal denge aur  css(yha vo object pass kardenge)
+
+            input ki value nikalne ke liye .value   ki jagah .val() hota
+            innertext() -> text()
+            innerHTML() -> html()
+                                    //GET aur SET dono ke liye
+                 $('tag').text('i am vishesh');
+
+
+
+            .getAttribute          -> .attr('href')
+            .setAttribute          -> .attr('href','value')
+            .removeAttribute       -> .removeAttr('href')
+
+
+
+            .classList.add()          -> .addClass('')
+            .classList.remove()       -> .removeClass('')
+            .classList.toggle()       -> .toggleClass('')
+            .classList.contains()     -> .hasClass('')
+
+
+
+            .parentElement            -> .parent()
+            .children                 -> .children()
+            .previousElementSibling   -> .prev()
+            .nextElementSibling       -> .next()
+                                  .sibling()    (saare siblings select ho jayenge)
+
+
+                    
+            .createElement('h1')      -> $('<div>')             //poora tag pass kardenge aise 
+            .append()                 -> append()
+            .remove()                 -> remove()
+            .before()                 -> before()
+            .after()                  -> after()
+
+
+
+            addEventListener               ->on
+            heading.addEventListener       ->heading.on(()=>{
+                                                })
+ 
+
+
+
+**** this keyword kbhi use kre to function lgake krte hai 
+    for eg btn.addEventListener('click',(e){
+        console.log(this);                                  //ye hume window function de dega
+    })
+    for eg btn.addEventListener('click',function(e){
+        console.log(this);                                  //ye hume btn ke andar jo hoga vo dega 
+    })
+
+     to jab bhi this keyword use kre to function me krna chiye
+
+
+
+
+
+
+     ******************(e.target aur this ko Jquery wrapper me daalna pdta hai $ sign use krke hamesha)*********************

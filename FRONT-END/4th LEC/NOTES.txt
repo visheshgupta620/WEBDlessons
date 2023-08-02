@@ -1,0 +1,66 @@
+TEXT FORMATTING :
+
+i) COLOR  ---> "green" , "#value" , "rgb(,,)" , rgba(,,,_) -> a=(0,1)
+
+2) cursor: value (cursor badal skte)
+
+3) text-align : bydeafult left    ;   left,right,center,justify
+
+4) line-height: para ki lines ke beech ka gap
+
+5) text-decoration : underline , line through , overline etc
+
+6) text-decoration-color : iss se jp underline vagara kar rhe usko bhi color de skte
+
+7) text-transform : case badalne ke liye line ka   : capitalise , uppercase , lowercase etc
+
+8) font-family :  value ;  font style change krne ke liye
+
+9) font-weight : value ; bold dene ke liye
+
+10) font-size: value ; font size change krne ke liye ; larger , smaller etc
+
+11) font-style : value ; italics vagara dene ke liye
+
+***POSITIONS : 
+               static  (default)
+        1)     relative   : relatively position badal lega , hoga to default vali jagah hi but dikhega aage so baki content uski   
+                            original space ko nhi lenge (vo space khali hi dikhegi) (apne positon ke relative me krega)
+        2)     absolute   : positon shift krega parent ke relative me but uski original space pe baki content move kar jaeyga
+        3)     fixed      : fix rhega screen pe position 
+        4)     sticky     :
+
+*** z-index: property use kar skte priority dene ke liye 
+      for eg nav tag fix krna ho aur uske upar aur data show na ho scroll krne par to usko z-index:value(100) de denge 
+               taaki uske upar data overlap na kare . LIKE USKO PRIORITY ZADA MILEGI
+
+*** inline-block : display:inline-lock
+
+***   FLEXBOX :      
+   1-D ME elements ko align krne me help krta 
+        x-main axis  / y-cross axis
+            RESPONSIVENESS - automatically hoti flexbox me
+         display:flex; 
+             flex-wrap: wrap,no wrap;
+             flex-direction  :  row(default),column,row-reverse,column-reverse;
+             justify-content :  flex-start, flex-end,space-around,space-between,center etc      x axis me fark ayega iss se
+             align-content   :                                                                  y axis me krega ye changes
+                                 **jab ekdum center me chiye ho to justify-content aur align-content ko 0 kardenge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

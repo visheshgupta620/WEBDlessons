@@ -1,0 +1,46 @@
+.container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: teal;
+    margin: auto;
+    animation-name: changeState;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.container2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: brown;
+    /* animation-fill-mode: forwards; */
+    animation: changePos 2s ease-in-out forwards;   /*shorthand*/
+    animation-delay: 1s;
+    /* animation-timing-function: ease-in-out; */
+}
+@keyframes changeState{
+    /* from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 50%;
+    } */
+    0%{
+        border-radius: 0%;
+    }
+    50%{
+        background-color: burlywood;
+    }
+    100%{
+        border-radius: 50%;
+        background-color: aquamarine;
+    }
+}
+@keyframes changePos{
+    /* 0%{
+
+    } */
+    100%{
+        transform: translateX(200px);
+    }
+}

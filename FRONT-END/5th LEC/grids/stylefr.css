@@ -1,0 +1,38 @@
+.container{
+    width: 70vw;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);    /*parent ki width ke hisaab se khud hi 5 parts me divide hojayega 1-1 fraction me*/
+    /* grid-template-columns: repeat(auto-fill,minmax(100px,1fr));  ye use krskte ki size chota hote rhe boxes ka screen chota krte krte use */
+    grid-template-rows: repeat(4,1fr);  /*fr use krne par ab jo container tha poora fill hojayega baki dono css file se size hum dere the rows ka isliye vo fill nhi hora tha */
+    grid-template-areas: 
+    "el1 el1 el1 el2 el2"
+    "el1 el1 el1 el3 el4"
+    "el1 el1 el1 el3 el4"
+    "el5 el5 el5 el5 el5";
+}
+.el{
+    /* height: 100px;
+    width: 80px; */
+    border: 1px solid black;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.el-1{
+    grid-area: el1;
+}
+.el-2{
+    grid-area: el2;
+}
+.el-3{
+    grid-area: el3;
+}
+.el-4{
+    grid-area: el4;
+}
+.el-5{
+    grid-area: el5;
+}

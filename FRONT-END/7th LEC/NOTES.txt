@@ -1,0 +1,22 @@
+**ANIMATIONS --
+                  @keyframe name {              there are 2 properties - to and from
+                         from{
+                             }
+                           to{
+                             }                 
+                                 }
+                 jis container me ye changes dene animation ke usme **animation-name** use krke name dena pdega iska aur **animation-duration** bhi de skte
+     
+                 from=0%   ,  to=100%  , agar beech ki kisi % pe changes chiye ho animation me to %n (%25) krke de skte
+
+                 kitni baar chlana uske liye **animation-iteration-count** ;
+
+                 animation-fill-mode: forwards   -- animation hone ke baad new position pe hi ruk jaane ke liye
+ 
+                 animation-delay   -- itne time baad animation start hogi
+
+**timing functions --           Animations ko speed vgara type dene ke liye use hota
+       1) Linear               --  same speed se movement 
+       2) ease-in              --  pehle slow fir fast
+       3) ease-out             --  pehle fast fir slow
+       4) ease-in-out          --  slow fir fast fir slow

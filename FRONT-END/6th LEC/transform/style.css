@@ -1,0 +1,34 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid red;
+    margin:  auto;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    /* rotate */
+    /* transform: rotateX(-90deg);    x axis ke along rotate karega to aise lgega jaise size chota hora ho
+    /* transform: rotateY(-90deg); */
+    /* transform: rotateZ(-90deg);  z axis vala dikhega hume normally work krte hue */
+    
+    /* translate */
+    /* transform: translateX(200px) translateY(200px); margin type de dega */ 
+    /* transform: translateZ(200px); */
+    
+    /* skew */
+    /* transform: skew(25deg) rotateZ(30deg); */
+    /* transform: skew(25deg); */
+    
+    /* scale */
+    /* transform: scale(2);     size bda dega iss value ke factor se */
+    transition-duration: 10s;
+}
+
+.container:hover{
+    transform: scale(1.5); /*jo duration denge utni duration me ek transition ki tarah size bdega
+    /* transition-duration: 10s; container me lgayenge isse hmesha mtlb upar me */
+}

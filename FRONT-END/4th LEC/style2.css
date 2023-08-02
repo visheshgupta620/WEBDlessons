@@ -1,0 +1,46 @@
+*{      /*taaki bilkul bhi space na ho covered*/
+    margin: 0;
+    padding: 0;
+}
+.div{
+    border: 2px solid black;
+    margin: 20px;
+}
+/* .div-3{                     relation khud ke according
+    background-color: orange;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+} */
+/* .parent{                parent dere hai to absolute me parent ke according hoga ab div3
+    position: relative;
+}
+.div-3{
+    background-color: orange;
+    position: absolute;
+    /* position: fixed; 
+    top: 2rem;
+    left: 2rem;
+} */
+.navbar{
+    border: 2px solid black;
+    background-color: black;
+    padding: 0.8rem;
+    position: fixed;  /*fix ho jayega*/
+    width: 100%;       /*ye bhi dene pdenge top aur width fix ke saath*/
+    top: 0;
+    z-index: 100;
+}
+.navbar a:link{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:line-through;
+    padding: 20px;
+}
+.navbar a:hover{
+    color: aqua;
+    background-color: white;
+}
+.container{
+    margin-top: 3.6rem;
+}

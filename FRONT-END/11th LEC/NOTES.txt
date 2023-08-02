@@ -1,0 +1,68 @@
+js to single thread hota to usne async perform krne ke liye we use the browser i.e. the window functions which is a global variable for async programming
+
+
+
+Event loop -  > web APIs ke run hone ka process 
+    timeout me 0 bhi de agar time to bhi pehle neeche vali lines run hogi kyunki timeoout vali pehle web APIS pe jata hai, 
+    uske baad ek special queue - callback queue jis se fir baki call stack empty hone ke baad ye usme jaake run hoga . 
+
+
+setInterval(function)  -> same hi code chlra rhega baar baar kuch interval of time pe
+
+Binding (jodna)  -> 'this' keyword   -> current context of the program    LEC 11 -> script.js
+                  'this'    -> window object
+                        1. default
+                        2. implicit
+                        3. explicit
+                        4. new keyword
+
+
+Constructor function    -- > 
+             function Student(name,age,rollNo){
+               this.name=name;
+               this.age=age;
+               this.rollNo=rollNo;
+
+               this.getRollNo=function(){     //jab bhi object bnega to har object me ye function create hoga which is a waste of memory 
+               console.log(this.rollNo);   // so we will use prototype
+                                        }
+            }
+        let Student3 = new Student('salman khan',65,001);    //new likhna zaroori hai
+              //new nhi use krenge to this window me bna dega ye variables 
+              //isliye new use krenge taki this hmare object ko point kre
+
+    
+
+
+Non primitive data types like array , function , object -> all are stored as objects only
+    jaise function a(){
+        a.age=10;
+    }
+    vo store aise hi hoga  
+           a{
+            age:10
+           }
+
+
+
+Prototype  ->  
+          used to implement inheritance in javascript
+            function student(name,age,marks){   // it will always have a Prototype key which cannot be seen but it is there
+                  this.name=name;                 // Prototype which contains the constructor for the student function which 
+                  this.age=age;                   //is indirectly the student function only
+                  this.marks=marks;               //student.Prototype.constructor se yhi function mil jayega hume
+                }
+
+          
+
+          to ab hum function prototype me bnayenge memory save krne taki har object me baar baar na create ho
+
+
+** (capital hai sbme pehla) String , Boolean , Array , Number , Function , sab Function prototype ke pass hote 
+                            aur vo object.prototype me hota to saari hi cheeze parent prototype pe hi present hoti
+
+    let fun=function(){}
+    agar hum          fun.__proto__   to ye Function.prototype dega
+    aur fir hum       Function.prototype.__proto__  to ye object.prototype dega
+
+    dunder-proto -> parent kon hai ye btata  (__proto__)

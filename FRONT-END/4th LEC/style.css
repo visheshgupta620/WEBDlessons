@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+
+div {
+    border: 2px solid black;
+    /* border-left: 10px solid red; */
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 3.4rem;
+    padding: 0.3rem 0.6rem;
+    /* background-color: black;
+    background-color: #6a7188; */
+    background-color: rgb(145, 110, 110);
+    color: white;
+    cursor: pointer;
+    /*CURSOR BADALNE KE LIYE*/
+}
+
+.btn:hover {
+    background-color: rgb(145, 110, 110);
+    color: black;
+}
+
+/* div p{                  TEXT FORMATTING
+    text-align: justify;
+    line-height: 2rem;
+    text-decoration: line-through;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+} */
+div p {                     /*font formatting*/
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+}

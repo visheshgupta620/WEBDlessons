@@ -1,0 +1,16 @@
+** AJAX and API'S
+                     AJAX -> Async Javascript and XML (Extensible mark-up language)
+                     API  -> Application Programming Interface
+    client aur server ke beech me JS ki ek layer
+      json -> js objects hi string ki form me hote -> javascript object notation
+
+
+
+REQUESTS : 
+   (1) FETCH                
+   (2) AXIOS   (GET,POST) (aaj kal ye use krte zada)
+   (3) XML REQUEST (very old way to request)
+
+   both works as promises only
+
+

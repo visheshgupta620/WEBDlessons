@@ -1,0 +1,31 @@
+TRANSFORM:  rotate,translate,skews    x axis me bhi aur y me bhi     ( CODE ME )
+
+
+positon vala hi repeat **
+relative - z axis me move ya float krega but original position bhi chodega nhi (vo jagah khali rhegi)
+            So relative me baki content disturb ni hoga
+absolute - z axis me float ya move krega aur ab original position pe uski baaki content aa jayega
+            
+ z axis mtlb user ki taraf move krega to vo kinda dikhega nhi but position badli hogi hi 
+
+
+ parent element ko relative bna dete hai taki childs ko absolute bhi do to vo parent ke relative me position kre , nhi denge to vo viewport ke according krte
+
+
+
+
+***RESPONSIVENESS - SCREEN SIZE KE ACCORDING OPTIMISE KRNA   . USER EXPERIENCE BETTER KRNE KE LIYE
+        breakpoint - vo size chote chote jis size pe changes laane ho 
+   responsive ke liye css units mostly em aur rem use hoti 
+1) MEDIA-QUERIES : 
+   1) media-type                        2) media-property                *->mostly used
+      screen (*)                           width(*)
+      print                                height
+      all                                  resolution
+                 
+     @media media-type and media-property{
+              select{
+                   property name : property value ;
+              } 
+
+  google krke breakpoints dekhte hue screen sizes ke hisaab se responsive bnate site ko

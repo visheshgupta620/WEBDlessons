@@ -1,0 +1,59 @@
+***	ADVANCED SELECTORS :
+            COMBINATIONS : 
+                1)Descendent combinators
+                                        div p span{                   
+                                                prop name:prop value;         //div ke andar p ke andar jo span hoga vo select ho jayega
+                                                  }
+                2)Child Cominator                                             //immediate childs select krega 
+                                        ul>li{}                                       
+                3)Immediate Sibling Combinators                               //immediate siblings
+                                        li+li{}               -->li se immediate baaad ke jo bhi li honge vo select honge
+                                        li#select+li          --> select kisi li ki id hai ab vo starting point ban jayega aur uske aage jitna immediate sibling honge uske
+                                                                  ya aage ke li's vo select honge
+                4)General Sibling Combinators                                 //isme saare siblings select honge jo immediate baad na ho vo bhi
+                                        li~li{}                                        
+
+
+***   Pseudo Class                        LINK VISIT HOVER ACTING          use krne ke liye : use krenge 
+                          hover , visited , active , link 
+                                          a:hover{}
+ * structural pseudo class: 
+                      jaise ek list ke random like even ya odd vale koi select krne ko 
+
+               ul li:first-child{}
+               ul li:last-child{}
+               ul li:nth-child(n){      n th child select ho jayega
+               ul li:nth-child(3n+3)     3 rd child se select hoga aur 3 ke increment pe krega aage     
+                               an+b                b offset ya starting value hoti jisko select krna hai aur a jitna increment dena
+
+ *  pseudo elements:                                            before and after 
+                   <li>      icon     +91 88888 </li>                          
+                          yha icon daalna
+           like texts ke beech me images daalne ke liye use krte
+     li::before{                              li::after{
+          content="UNICODE";                             content="UNICODE";           //UNICODE NET SE MILEGA JAISE TELEPHONE KE SYMBOL VAGARA KE LIYE 
+                }                                     }
+
+         eg CODE ME
+
+
+
+
+
+*** Specificity :
+              top to down hi pdte hai css aur html dono me hi 
+                  jo property sbse niche di hogi kisi tag vo apply hogi
+                         p{ 
+                             color:blue;
+                           }
+                          p{ 
+                             color:green;
+                           }
+
+                GREEN COLOR HOGA APPLY KYUKI VO BAAD ME HAI
+
+    specifictiy of  inline > external and internal 
+                      if we write link tag before style then internal css ki specificity zada hogi external se 
+                                                                           nhi to vice versa
+       to jo niche hogi uski specificity sbse zada     isliye inline ki sabse zada
+     

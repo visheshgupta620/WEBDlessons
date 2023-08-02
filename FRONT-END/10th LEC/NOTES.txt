@@ -1,0 +1,28 @@
+MAPS in ARRAYS  ****   -> inn sbme callback functions use krte hai
+
+    map() ->array
+    filter() -> array
+    reduce() -> value
+
+
+
+for each loop -- > it also accepts a callback function
+
+sort();
+reverse();
+
+
+
+
+
+
+      multithread(multiple user)
+** Asynchronous Programming                  
+       JS -> synchoronous language , single threaded(single user) ;
+
+    callstack -> thread of execution (JS PE EK HI CALLSTACK HOTA ISLIYE VO SINGLE THREADED HOTI)
+
+
+
+new Date().gettime()    -->    1 jan 1970 se abhi tak ke mili seconds print krdega 
+

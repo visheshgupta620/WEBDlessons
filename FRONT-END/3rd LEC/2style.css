@@ -1,0 +1,59 @@
+/* div p span{
+    color: aqua;          sirf pehle vala hoga select DESCENDENT COMBINATOR 
+} */
+/*
+p span{
+    color: aqua;            is se dono hi span select ho jayenge 
+} */
+/* ============= descendent combinators =========== */
+/* span#div-wala-span{
+    color: aqua;            /*id deke bhi kar skte ek span ko
+} */
+
+/* ============ child combinator ========== */
+/* ul>li{
+    color: red;
+} */
+
+/* ================= immediate siblings ======== */
+/* li+li{
+    color: red;
+} */
+
+/* ========== general siblings ============== */
+
+/* li#select~li{
+    color: red;
+} */
+nav{
+    background-color: black;
+    padding: 10px;
+}
+nav a:link{
+    color: red;
+    text-decoration: none;
+}
+nav a:visited{
+    color: green;
+}
+nav a:active{
+    color: black;
+    background-color: yellow;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ----------------------------------------- */
+
+ul li::before{
+    content:"\1F4DE";
+}
+ul li:after{
+    content:"\1F4DE";
+}
+.container p::first-letter{
+    font-size: 50px;
+}
+
+ /* ----------------------------------------- */

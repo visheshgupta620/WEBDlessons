@@ -1,0 +1,15 @@
+p{                /*element selector*/
+    color: purple;
+}
+.one{              /*class selector*/
+    color: hotpink;
+}
+#yo{               /*id selector*/
+    color: antiquewhite;
+}
+a [href="https://facebook.com"]{
+    color: aquamarine;
+}
+*{                 /*Universal selector*/
+    color: aqua;
+}

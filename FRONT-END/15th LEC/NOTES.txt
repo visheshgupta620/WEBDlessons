@@ -1,0 +1,26 @@
+EVENT    
+    Bubbling and Capturing   ->
+                        addeventlisten('',()=>{
+
+                        },true or false)            //default false hota agar kuch na likhe tab              
+                false -> bubbling ke time chlta 
+                true  -> capturing ke time chlta
+
+
+                 
+
+                html
+         head          body
+                     div.grand_parent
+                       div.parent                      agar upar ki taraf jaye for eg div.grand_parent se html to vo BUBBLING
+                       div.child                       agar neeche ki taraf jaye for eg html se div.grand_parent to vo CAPTURING 
+                                                     jispe hum lgayenge ye event listener vo hmara even trigger / target bnta
+
+
+
+
+event delegation -> 
+            sbpe na lgake event listener parent pe lgado direct (uss se child ke liye bhi work krte vo)
+            
+            agar hume sirf child pe click pe hi work krana ho to parent pe jo hum bnayenge usme .stoppropogation lga skte ,
+             fir vo sirf childs pe click krne pe hi chlega

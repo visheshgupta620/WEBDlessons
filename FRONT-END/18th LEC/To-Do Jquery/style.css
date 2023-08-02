@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.container{
+    border: 2px solid black;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+#inputs{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 10px;
+}
+
+#inp{
+    width: 70%;
+    padding: 3px;
+}
+
+#btn{
+    width: 20%;
+}
+
+.task{
+    /* border: 1px solid red; */
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .task .section-A{
+    display: flex;
+    border: 1px solid green;
+} */
+
+.section-A p{
+    /* border: 1px solid blue; */
+    display: inline;
+}
+.section-B{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span, #btn, .checkbox{
+    cursor: pointer;
+}
+
+
+.checkclick{
+    text-decoration: line-through;
+}

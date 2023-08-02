@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background: url(./img/Space.png);
+    background-color: rgb(83, 83, 164);
+    position: relative;
+    animation:  rocketMove 4s ease-in-out forwards;
+}
+.rocket{
+    height: 120px;
+    width: 120px;
+    /* border: 2px solid black; */
+    position: absolute;  /*container ke relative me position krdega neeche jo left aur bottom likha uss hisaab se*/
+    bottom: 130px;
+    left: 230px;
+    animation: rocketupdown 1.5s ease-in-out infinite,
+               rocketstraight 1.5s ease-in-out 8s forwards,
+               rocketlaunch 2.5s ease-in-out 9s forwards ;
+}
+.rocket img{
+    width: 100%;
+    transform: rotateZ(45deg);
+}
+@keyframes rocketMove{
+    100%{
+        background-position: 200% 0;
+    }
+}
+@keyframes rocketupdown{
+    0%{
+        bottom: 130px;
+    }
+    50%{
+        bottom: 220px;
+    }
+    100%{
+        bottom: 130px;
+    }
+}
+.cody{
+    width: 60px;
+    height: 120px;
+    /* border: 2px solid black; */
+    position: absolute;
+    bottom: 130px;
+    left: -200px;
+    animation: codyenters 2s ease-in-out 4s forwards,
+               rocketupdown 1.5s ease-in-out infinite,
+               codyinplane 1s ease-in-out 7s forwards;
+}
+.cody img{
+    width: 100%;
+}
+@keyframes codyenters{
+    100%{
+        left: 100px;
+    }
+}
+@keyframes codyinplane{
+    100%{
+        transform: scale(0);
+        left: 300px;
+    }
+}
+@keyframes rocketstraight{
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+@keyframes rocketlaunch{
+    100%{
+        bottom: 1000px;
+    }
+}

@@ -1,0 +1,60 @@
+promises -> async ko sync me likhne me help krta
+               .then --> resolve
+               .catch --> reject
+       isme hum then() ki chaining krte
+       ek then chlega tbhi vo next then pe jata hai
+
+       fulfill , reject , pending   -> 3 states in promise
+
+       aur ek .then ki chain me koi reject chal gya to aage move nhi krega (mtlb catch pe chla jayega seeedha)
+
+
+
+
+    async-await -> easy way to async ko sync me krna
+                      basic approach me bas async - await keyword use krte 
+            promise ke saath use hota ye
+
+
+
+** DOME  -:               (Document object model)    --> to use css properties through javascript
+           tree like structure hota html ka 
+           selection and manipulation krte isme
+
+        Selectors :
+           1. document.getElementbyId("idname")
+           2. document.getElementsbyClassName("")
+           3. document.getElementsbyTagName("")
+           4. document.getElementsbyName("")  
+           .querySelector('')             ye dono baad me aaye the // isme jo tag likhenge vo hmare doc me sbse pehle vala vo vala tag select krlega , id ke liye # , class ke liye .
+           .querySelectorAll()            aur ye saare tag select krlega jo dege hum 
+
+
+
+    innertext  -> hmare tag ke andar ka content
+    innerHTML  -> ye bhi same hi hai but 
+               iske andar kuch changes kre to vo html ki tarah lega jbki 
+               innertext usko string ki tarah treat krega
+
+               for eg <em>HI</em>   -> innerHTML se empasize hoke change hojayega
+                                    -> innertext ye poora hi with em tags paste krdega
+
+
+
+
+attributes jaise src,href vgara ke liye :
+    .setAttribute("attribute name","attribute value) 
+    .getAttribute("attribute name")
+    .removeAttribute("attribute name")
+
+
+multiple class dene ke liye kisi tag ko space dete hai 
+eg class="new won"
+         we can select through both new and won class
+
+
+** classlist -> saari classes dekhne ke liye
+   .classlist.add()
+   .classlist.remove()
+   .classlist.contains()
+   .classlist.toggle()

@@ -1,0 +1,62 @@
+1) <label for="area"></label>
+         <textarea cols="" rows="" id="area"></textarea>  
+
+
+
+2) FORMS           GET AND POST
+        ATTRIBUTES--> ACTION 
+     <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="username">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+
+3) Image tag <image>
+   attributes:
+         1)   height
+         2)   width
+                             height ya width me se ek hi attribute dena chiye for a  good view
+
+         3)   src = links of images (external url or downloaded file)
+         4)   alt = image na load ho paye to ye alternate text display ho jayega
+
+4) Video tag <video>
+   attributes:
+         1)   src = LINK
+         2)   height ya width 
+         3)   controls   - play / pause button ke liye
+         4)   autoplay - default video play ho jayegi webpage kholte hi
+         5)   loop - video vaapis start hoti rhegi khtm hote hi
+
+5) Audio tag <audio>
+   attributes:
+         1) controls etcccc...
+
+6) iframe tag  :  cheezo ko apne webpage me embedd krne ke liye  , pdf vgara bhi kar skte  
+   attributes:
+         1)   width
+         2)   height
+  
+
+** SITE FORMAT  -- site.html file me dekhlo  use
+      HEADER
+      NAV BAR
+      main - main content
+      ASIDE - LEFT RIGHT ME BAR SA BNANE KE LIYE    . it is a block tag
+      SECTION
+      ARTICLE - REPEATED USE HONE VALI CHEEZO KO ARTICLE ME BNA SKTE
+      FOOTER
+              
+             
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+we can use fadein fadeout slideup slidedown slidetoggle hide type little animations from jquery documentation directly made
+ functions which makes it very benificial for us , makes the experience interactive .

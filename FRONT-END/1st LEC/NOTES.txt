@@ -1,0 +1,117 @@
+#HTML5 - BOILER PLATE 
+
+#HTML- HYPER TEXT MARKUP LANGUAGE - MARK KRTE HAI CHEEZO KO JAISE HEADING KO HEAD BTATE HAI;
+
+#TAGS - <TAGNAME>CONTENT</TAGNAME>
+         OPEN             CLOSE
+         TAG               TAG 
+
+#HEADING TAG - ACCORDING TO FONT SIZE = H1 TO H6   =(H1 IS THE GREATEST) <h1></h1>;
+
+#PARAGRAPH - p tag = <p>CONTENT</p>
+
+#BLOCK LEVEL - EG <div>     POORI LINE ME EK HI CHEEZ HOGI (VIEWPORT KI POORI WIDTH)   ***
+  
+#INLINE      - EG <span>    JITNA CONTENT HAI UTNI SPACE LEGA                          ***
+
+#loremn - n words aa jayenge random
+<b> - BOLD
+<strong> - HIGHLIGHT(BASICALLY BOLD)
+<i> - ITALICS
+<em> - EMPHASISE(BASICALLY ITALIC)
+
+* HTML entities/escape characters :       
+             &lt; - <
+             &gt; - >
+             &copy; - copyright vala symbol
+
+
+<code>- code ADD KRNA HO TO USKE LIYE YE TAG            SIRF CODE TAG SE SAME HI LINE ME AAJAYEGA POORA
+ISLIYE CODE KE SAATH ME <PRE> TAG USE KRENGE TO JAISE LIKHENGE VAISE HI AA JAYEGA - <pre>
+
+superscript -   power me jo hota - <sup>
+subscript   -   neeche jo hota   - <sub>
+             
+* LIST - types: ordered and unordered list
+              1,2,3,..    bullets,dots
+       #ordered - <ol> BY DEFAULT 1,2,3,4 SE HOTA YA FIR 
+                        type attribute="" deke change krskte roman vagara me
+                        start attribute="integer value always" starting no. change kr skte hai
+       #unordered - <ul> isme bhi type attribute hota - circle , disc , etc;
+       
+                                <li>list item ke liye
+
+* TABLE - 2D DATA SHOW KRNE KE LIYE - ROWS AND COLUMNS ; <table> tag
+          1st row - table head     <table>
+                                   <thead>
+                                         <tr>
+                                               <th> </th>
+                                               <th> </th>
+                                         </tr>
+                                   </thead>
+                                   <tbody>
+                                         <tr>
+                                               <td> </td>
+                                               <td> </td>
+                                         </tr> 
+                                         <tr>
+                                               <td> </td>
+                                               <td> </td>
+                                         </tr>                                     
+                                   </tbody>
+                                   </table>
+       Attributes for table :  border - border dene ke liye
+                               cell spacing - 2 cell ke beech ka space
+                               cell padding - ek cell le border aur content ke beech ka distance
+                               colspan - colspan="n" n columns ko milake baki aaage kar dega
+                               rowspan - rowspan="n" n rows milaane ke liye
+
+* <br> - break tag (sirf open hota) 
+* <hr> - horizontal line maar deta hai beech me (sirf open hota) 
+
+
+* ANCHOR TAG : <a> 
+       attributes:  1)<a href="link">    
+                      link can be absolute or relative    
+                      ABSOLUTE - DIRECT URL 
+                      RELATIVE - APNI FILE KA LINK
+                                 ./  -- USI FOLDER ME
+                                 ../ -- FOLDER SE BAHR KI FILE KE LIYE
+                    2)target (can be blank or _self)
+                          blank  se new tab me khulega link
+                          self   se same tab me
+    **agar same hi tab me khi neeche scroll krdena ho direct jaise hota wiki vgara pe to hum aise krte:**
+           id attribute use krenge (har alg element ke liye unique hoti) 
+           <a href="#idname">goto </a>  -- jis part pe scroll krna usse id deeke href me # use krke de denge
+              for eg <a href="#new">goto</a> 
+
+
+
+**TAKING INPUTS IN HTML :
+   <input>
+ attributes:
+         type=""   text , password etc
+         placeholder=""  input vali jagah pehle se kuch display krane ke liye
+                       eg name: enter name 
+                               default enter name likha ayega
+<label> tag label krne ke liye cheez ko 
+( iske through eg vala name: likhe to ispe click krenge to input lena start ho jayega)  
+    for attribute use krke uss input ki id denge label me                                           
+          (code se dekhlo)- INPUT.HTML
+
+** kuch components ko ek hi box ke andar dikhaane ke liye - <fieldset>
+   aur uss box ko ek title sa dene ke liye (like box ke border pe likha ayega) vo likhne ke liye - <legend>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+             

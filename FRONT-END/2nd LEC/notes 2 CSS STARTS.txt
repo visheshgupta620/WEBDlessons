@@ -1,0 +1,35 @@
+CSS
+cascading style sheets
+presentation layer
+skin to HTML 
+
+
+**WAYS TO ADD CSS:
+  1)INLINE   :     
+            Using style attribute within a tag to edit it
+                  <h1 style=" Property name : Property value" ; more > HI </h1>  
+  2)INTERNAL : 
+           <style>
+                p{
+                     color:blue;
+                 }
+           </style>
+  3) EXTERNAL :
+           <LINK> TAG USE KRKE ALG SE .CSS FILE BNAAKE LINK KR SKTE
+
+
+
+**Basic Selectors:
+  1) ELEMENT SELECTOR        elementname{                                            //HTML tree ke saare ke saare tag select hojayenge jo tag select kiya hoga 
+                                           propertyname:propertyvalue;                 
+                                        }
+  2) ID SELECTOR                     #id{                                            //uss id se saare elements select ho jayenge poori html tree ke
+                                           propertyname:propertyvalue;
+                                        }
+  3) CLASS SELECTOR               .class{                                            //class ke saare element select
+                                           propertyname:propertyvalue;
+                                        }
+  4) ATTRIBUTE SELECTOR
+  5) UNIVERSAL SELECTOR            *{                                                //poori file hi select ho jaoge
+                                            propertyname:propertyvalue;
+                                    }
