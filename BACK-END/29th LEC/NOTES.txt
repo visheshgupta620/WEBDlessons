@@ -1,0 +1,27 @@
+	changes in project : 
+                  validation added like ki name string hona chiye aur jaise koi credit card no lere to check krna vo valid hai na nahi inn sbke liye joi ka use kiya . 
+               aur middlewares bnake validate kiya
+                 aur try catch block me kiya routes ko taki user experience bade , server crash na ho , errors de crash hone ki jagah  
+
+
+
+Middlewares :
+            function hi hota 
+                     function(req,res,next)        access hota hai inka
+  next function se agle middleware ko request bhejte hai
+  ek hi route pe multiple middlewares bna skte 
+    eg app.get('/home',function name ya definition,multipe functions bna skte,(req,res){})
+
+
+
+    app.use krke jo bnate vo bhi middleware hote jo ki post aur get dono ke liye hote
+
+
+
+Validation -> validate krna data ko
+
+ backend pe hota aur frontend pe bhi  -> dono pe lgani chiye hamesha
+
+   frontend ->
+   backend ->  mongoose se jaise form me required keyword vagara use krte (basic cheeze kar skte)
+               using JOI tool (eg checking credit car nos , email)

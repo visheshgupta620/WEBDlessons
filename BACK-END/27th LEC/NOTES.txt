@@ -11,6 +11,7 @@ fir,
       app.engine('ejs',ejsMate);
       
 
-buy now pe ke baad :
-      left me poora card ,
-      right me review , range for stars , comments 
+
+
+
+project started (only crud operations performed till now)

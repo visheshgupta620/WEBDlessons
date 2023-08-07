@@ -1,0 +1,7 @@
+PROJECT ME YE CHNAGES KIYE :
+buy now pe ke baad :
+      left me poora card ,
+      right me review , range for stars , comments      (stars me review lene ke liye github pe starability naam se repository
+                                                         hai vha se code uthake krte hai , alg alg types ke bhi mil jayenge vha)
+
+AUR reviews add krvaye buy now vale page pe joo user dere by creating another review model .

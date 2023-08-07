@@ -163,13 +163,6 @@ git push
 git status -> status check kr skte files ka (changes jo kre vo dekh skte)
 
 
-kuch changes kre ho files me unhe github pe reflect krne ke liye
-
-git add .
-git commit -m "message"
-git push
-
-
 
 
 
