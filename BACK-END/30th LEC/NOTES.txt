@@ -4,19 +4,21 @@ project changes :
 
 
 
-
+             npm i express-session and npm i connect-flash
 
           connect-flash -> internally use krta hai sessions npm ko to dono download  (pehle session bnayenge fir app.use(flash()) likhenge)
           krne padte (hamesha kisi page pe redirect krte hue hi use krte flash ko)
 
-          ejs tags me show krne vala data {} krke pass kar dete the render me
-         but sessions ko use krne ke liye ejs me we use locals (ejs files me bhej dega)
+
+          ejs tags me jo use kar ske data usko  res.render('',{})   {} aise pass kar dete the
+                        
+             but sessions ko use krne ke liye ejs me we use locals (ejs files me bhej dega)
 
 
 
 
 
-render -> ejs tags me jo data hai usko show krna
+render -> ejs tags me jo data hai <%= data %> usko show krna main page pe
 
 
 
@@ -33,18 +35,21 @@ client side :        1) local storage ->     khud padna  (react me kaam ayenge d
 server side :        1) session (ye client vale sessional se alag hai)
 
 
-            cookies :        key-value pairs                har request ke saath cookies bhi jati hai uski       (requests ko stateful bnati hai stateless se)
+
+
+
+          cookies :        key-value pairs                har request ke saath cookies bhi jati hai uski       (requests ko stateful bnati hai stateless se)
 
               stateless -> jo request hogi vo kisi aur request se koi lena dena nhi hoga   (independent)              
               stateful  -> jab request bhejte to cookies store hoti for ex to vo vaapis bhi jati (store hoti) to next request me cookies bhi  use krte
-                                (like pehle data store kiya kisi ka fir bbaki route pe data use kiya to vo dependent hua na)(jaise fb me hota)
+                                (like pehle data store kiya kisi ka fir baki route pe data use kiya to vo dependent hua na)(jaise fb me hota)
 
 
   npm i cookie parser  -> jaise urlencoded vagara tha vaise hi cookie read krne ke liye ye (req.cookies se destructure krenge)
 
 
 
-  signed cookies -> req.signedcookies  -> app.use('vishesh') -> vishesh like pass ban jayega cookies ka
+  signed cookies -> req.signedcookies  -> app.use('vishesh') -> vishesh like pass ban jayega cookies ka  (taki user cookies ko apne hisaab se badal de tab bhi fark na pade
       user inspect me cookies me value badal bhi de apne fayde ke liye tab bhi output nahi badlega    
       (normal cookies ko user hi jaise chahe badal sakega)
 
@@ -53,3 +58,16 @@ session :
 express-session    -> connect.sid naam se cookie store krte user ki id ke liye req.session. (jo bhi store krenge sab program memory me store hoga)
  jaise instagram vagara pe login ke baad hume ek session (sid) ajati hai session me joki to hum usme kuch bhi kre vo baar baar id pass nhi mangta kyunki session id same rehti (to ye bahot important hai aur difficult bhi)
  (github se dekhke iska code karte)
+
+
+COOKIES STORE KRTA BROWSER ME
+SESSION STORE KRTA PROGRAM MEMORY ME
+
+
+
+flash redirect jha krte vha use karte hai but vo dono request vaise to independent hoti , to flash ko pta kaise chlega kha use hona hai, isiliye session bnana zaroori hota flash use krne ke liye
+
+
+
+
+

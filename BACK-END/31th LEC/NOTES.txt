@@ -1,0 +1,44 @@
+Authentication Demo                     passport js is used *
+
+
+
+Authentication: check krna user valid ya unique hai ya nahi
+authorisation : access dena
+
+                                                         
+jaise humpe AuthDemo bnaaya hai usme hume jab bhi user login ho tbhi home page ('/') ko access ho aisa krna hai using session -> Authentication        (like pehle direct login page hi khulega home (/) ke route pe bhi agar login na ho rakha ho tab)
+(ye agar hum normal db me check lgake nhi krenge kynki fir to koi bhi db me jitne log ho access kar payenge)(to session use krenge - unique sid hoti (session me store krdenge _id user ki)) (fir middleware bnake check krenge ki _id exist kr rhi session me ya nahi)
+(server band krte hi session band ho jayega normal to (isliye mongoDB me alg se install hota jisme server band hone ke baad bhi permanently save rehta hai session taki user ko baar baar login na krna pde for eg. amazon))
+
+
+aur Authentication easily perform krne ke liye hota passport js
+
+
+
+
+
+AuthDemo me download kiya ye sab:
+express , ejs , mongoose , express-session
+
+
+
+
+
+DB me passwords ko store krte jab to direct passwords nhi krte  
+nhi to secure nhi rhega , mongoDBcompass me bhi dikh jayega jaise
+to hum use krte hai hashing functions  (jo db me alg tarah store krdega isse)   
+
+for eg - SHA-256 (MOST POWERFUL) hashform me store ho jayenge aur  one way hote (mtlb aisi koi way nahi ki uss hash se aap password nikal sako vaapis)
+                                                          slow hona chiye (jaise bank account me hota)  
+
+
+
+
+project changes : 
+   db me passwords ko alg tarah store krne ke liye we are using bcrypt package
+      bcrypt.hash(password,10)    -> function se karte
+                                  -> 10 ya n no. of times round ki kitni baar hash ho
+
+  baad me jab compare krna hoga db me stored hashed password ko to jo user password dalega usko bhi hash krke compare krna pdega
+  to same string ko hash krenge to hamesha same hi bnega
+  user vale password ko bhi hash krke compare krne ke liye bcrypt ne function diya hai -> compare() 
