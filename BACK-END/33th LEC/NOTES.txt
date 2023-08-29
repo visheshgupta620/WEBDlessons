@@ -1,0 +1,29 @@
+login krenge jab to    req.user me user ka poora data store hota hai to usse use kr skte
+
+1) user should be valid 
+2) seller hona chiye data change krna chahe to (edit , delete)
+3) aur isAuther  (jisne product dala ho site pe)
+4)
+5)
+6)
+
+
+
+
+project:
+
+wishlist -> we will use client side rendering because we don't want to reload the page (to go on to some other or the some route)  so we will use AJAX api (client side rendering)
+ 
+and ajax api requests (like api se data fetch vagara karne ka kuch bhi kaam hoga vo hum frontend ki public folder vali js me hi kar skte because nodejs me fetch ya document api i.e. aise requests nhi bhej skte
+
+
+
+
+
+401 error -> unauthorized
+
+
+
+
+heart ka color badalna
+login krne pe  wishlist vale pe red heart ana chiye (font-awesome-site se heart)

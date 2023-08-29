@@ -1,0 +1,122 @@
+Payment Gateway
+paytm , razorpay , payumoney etc etc
+
+
+
+account bnake , kyc krayenge tab actual ho payega payments vagara
+abhi to testing ke liye bas dummy payments kar payenge bina login ke
+
+
+API KEYS dekhni login krke
+
+razorpay docs nodejs se documentation khul jayegi 
+
+
+agar model me data type define na kre to vo object id hi hota
+
+
+
+POSTMAN  ->  used for API testing
+
+
+
+
+AXIOS request se amount nikala , fir order create kiya , aur payment kiya fir payment verify kiya , tab payment status successful kiya db me
+
+
+
+
+
+
+aur jo hum object ids aise hi store kra dete aise nhi krte , unko bhi like password ki tarah thoda hidden rakhte
+
+we used the MVC architecture in our project -> model , views , controller
+
+remaining things :
+1) deploy krenge to db to hoga nahi server vale pc pe
+   to hum use krenge mongodb atlas
+2) sessions abhi tak program memory me create hore the , to unhe bhi db me krna pdega , taki kabhi server crash ho   
+   to user ka data uddd naa jaye
+3) persistant login   (like login na krna pde baar baaar for eg ek baar login ke baaad 7 din tak logged in rahe use   
+   vapis khole tab)
+4) dotenv     ka use karna -> environment variables (url vagara for eg mongodb ke to jaise github pe publically 
+   dikhega to unn sbko nhi dikhana hota jaise payment ki secret keys vagara to inn sbko hide krna pdta hai)
+
+
+gitignore folder me jo files ka naam likhde vo github pe upload nahi hoti
+
+similarly jo jo data hide krna hai user se unko .env file bnake usme likh denge
+
+
+
+
+
+session ko expire krne ke liye :   session bnane vale me      
+                               maxAge   ->  7*24*60*1000    //milliseconds me dena hota time (to ye 7 days hai)
+                               expired
+   app.use(session({ 
+       cookie:{
+          secure:true;                //secure true krdenge to koi bhi hacker ya koi access nhi kar payega cookies  
+                                         ko bilkul bhi
+          maxAge   ->  7*24*60*1000
+           }
+       })
+
+
+
+
+
+session ko db me daalne ke liye   ->   npm i connect-mongo
+        session creation me bas 
+                      store: MongoStore.create("  links   ")         (documentation me dekh lenge)
+
+(ab server restart kre tab bhi user logged in rhega because db me stored hai session ab (jitna bhi time hum denge milliseconds me utna hi der logged in rhega))
+
+
+
+
+controller folder me bas jo routes me kaam kr kre (req,res){}   vala unko alg folder me kisi name se function bnake , routes me require krke dal rhe (like bas code ko refine krne ke liye) 
+
+
+
+
+
+jaise hmare pass multiple requests pe same routes hai to unn sbko same hi request me bhi likh skte using route 
+eg. 
+    router.route('/products')
+          .get(middlewares,controller)               //get ayegi to ye chlega
+          .post(middlewares,controller)              //post ayi to ye chlega
+          .patch()                                   //patch ayi to ye chlega
+          .delete()                                  //delete ayi to ye chlega
+          
+
+
+
+aur har route me jaise kuch same cheez ko like productroutes me  : 
+                    /products hai har request me to aise kar skte hai
+                 app.use('/products',productroutes)     aur routes me request se hta denge /products
+
+
+
+
+mongodb atlas pe jake register :                    //production level yhi hote //local vala bas testing ke liye hota
+  new project click , create project , create a deployment , free mode , fir ek username password milega usse yaaad  
+  krna , create user , IP address dalna jis jisko allow krna chahe , fir connect fir driver me nodjs fir ek link milega usko copy krna aur .env me paste krdena dburl me aur usme password bhi dalna pdega
+aur jo purana local url tha usko or condition me daldo app.js me mongoose.connect me 
+
+
+
+
+
+
+register kre to login bhi khud hi jao ( ye function dhundna)
+
+
+
+
+
+
+
+
+
+

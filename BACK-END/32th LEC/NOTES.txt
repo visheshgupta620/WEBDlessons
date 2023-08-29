@@ -1,0 +1,24 @@
+locals -> basically jaise res.render('',{}) krte    , to { } iske andar jo ho usse hum ejs me use kr pate hai
+             but jab redirect krte hai jaise ki flash ke use pe  res.redirect('')  tab aise pass nhi kar skte  , to hum locals ka use krte hai , ( vo globally bna deta hai like hum   
+             throughout the file usko khi bhi use kr skte ejs tags me)
+locals -> poore program me globally khi bhi access kar skte ejs me (res.locals.success vala local)
+
+
+
+
+
+
+
+
+
+Passport ->
+     used for authentication
+     It uses sessions . In auth-demo file we deleted or created the session ourselves , now it will be done automatically using Passport
+          serializeUser -> session me add krna , deserializeUser -> session se remove karna
+
+    passport           (sessions)
+    passport-local -> normal id password se krna ho authenticate to ye use hota
+    passport-local-mongoose -> schema bnega pehle , 
+
+project changes : 
+            authentication using passport

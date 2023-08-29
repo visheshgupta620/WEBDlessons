@@ -42,3 +42,7 @@ project changes :
   baad me jab compare krna hoga db me stored hashed password ko to jo user password dalega usko bhi hash krke compare krna pdega
   to same string ko hash krenge to hamesha same hi bnega
   user vale password ko bhi hash krke compare krne ke liye bcrypt ne function diya hai -> compare() 
+
+
+
+  logout krte hue bas session destroy krdenge kyunki usme _id destroy krdenge to khtm ho jayega aur home page access hi nhi hoga

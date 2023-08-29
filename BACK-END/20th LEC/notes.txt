@@ -32,6 +32,7 @@ NODE JS ->
                 File System X                                          File System
 
 terminal me run hota
+
 ls se poori directory i.e. sari files dikhti
 node fir file ka naam likhe to run hota
 

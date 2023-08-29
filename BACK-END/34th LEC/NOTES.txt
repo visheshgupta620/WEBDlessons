@@ -1,0 +1,5 @@
+wishlist me humne SSR isliye use nhi kiya kyunki poora page reload hoga fir (ssr se a tag ya form use krke bhi kar skte the , but user experience kharab hota)  -> jaise user 50th product ko like kre , usko uss se agla bhi krna to reload hoke poora upar aa jayega , to isliye ajax ka use krenge taki bina reload ke hi add ho jaye
+
+
+
+-,cart count, total amount, poora cart ajax se bnana

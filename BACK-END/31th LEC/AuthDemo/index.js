@@ -3,6 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const app = express();
+const bcrypt = require('bcrypt');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -14,7 +15,7 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-  }))
+}))
 
 mongoose.connect('mongodb://127.0.0.1:27017/authdb')
     .then(() => {
@@ -26,12 +27,13 @@ mongoose.connect('mongodb://127.0.0.1:27017/authdb')
 
 const User = require('./models/user');
 
+
 app.get('/', (req, res, next) => {         //middleware bnaya to check user exist kr rha ho tabhi home page khule , nhi ho to login page khule direct (just like facebook)
     if (!req.session.userid) {             //login krte hue jab password correct ho tab humne session me _id dali aur ye check kr rhe iss line ki session me _id exist kr rhi ya nhi 
         res.redirect('/login');            // to home page tbhi khulega jab user log in kar chuka hoga (kyunki login nhi kiya hoga to session me _id hogi hi nhi)
     }
-    else{
-    next();
+    else {
+        next();
     }
 }, (req, res) => {
     res.render('home');
@@ -46,9 +48,12 @@ app.get('/register', (req, res) => {
 
 app.post('/register', async (req, res) => {
     const { username, password, email } = req.body;
+
+    const hashPassword = await bcrypt.hash(password, 10);    //password ko alg tarah store krne ke liye for more security
+
     const user = await User.findOne({ username });
     if (!user) {            //so that username is unique everytime
-        User.create({ username, password, email });
+        User.create({ username, password: hashPassword, email });
         res.redirect('/login');
     }
     else {
@@ -61,8 +66,13 @@ app.post('/login', async (req, res) => {
     const user = await User.findOne({ username });
 
     if (user) {
-        if (user.password == password) {
-            req.session.userid = user._id;              //current session me user ki unique (_id) daaldi
+        // if (user.password == password) {    
+        //     req.session.userid = user._id;              //current session me user ki unique (_id) daaldi
+        //     res.redirect('/');
+        // }
+        const isValid = await bcrypt.compare(password, user.password); //user.password hash hoga isliye compare krne ke liye naye password ko bhi hash krna pdega
+        if (isValid) {
+            req.session.userid = user._id;
             res.redirect('/');
         }
         else {
@@ -73,7 +83,6 @@ app.post('/login', async (req, res) => {
         res.redirect('/register')
     }
 })
-
 
 
 const port = 3000;
