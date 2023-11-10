@@ -117,7 +117,7 @@ ARROW FUNCTION  :       =>            basically a short form to create functions
                return a+b;
              }
 
-      let add = (a,b) => a+b;                 // for single line
+      let add = (a,b) => return a+b;                 // for single line
       let add = (a,b) => {                    // if multiple lines
              return  a+b;
            }

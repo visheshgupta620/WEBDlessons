@@ -7,9 +7,9 @@ console.log(arr.length);   //length of array
 //   }
 
 //for of loop         (array)
-//   for(var item of arr){
-//     console.log(item);
-//   }
+  for(var item of arr){
+    console.log(item);
+  }
 
 //for in loop         (object)
 var person= {     //object
@@ -21,6 +21,6 @@ var person= {     //object
 }
 
 for(var key in person){
-    // console.log(key);          //keys print krne ke liye 
+    console.log(key+'-'+person[key]);             //keys print krne ke liye 
     console.log(person[key]);     // values print krne ke liye
 }

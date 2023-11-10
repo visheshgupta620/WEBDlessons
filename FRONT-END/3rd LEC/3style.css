@@ -13,7 +13,7 @@ ul li{
 .parent{ 
     background-color: aqua;
     height: 70vh;                  /*viewport ke hisaab se 70% screen ki height cover kar lega*/
-    width: 100vw;
+    width: 80%;
 }
 .child{                           /* parent class vala div iska parent hai to % uske hisaab se size dega */
     background-color: red;

@@ -1,4 +1,4 @@
-.parent{
+.parent {
     border: 2px solid black;
     height: 600px;
     width: 1200px;
@@ -8,23 +8,39 @@
     /* margin:80px 200px; */
     margin: 80px auto;
 }
-.child{
+
+.child {
     border: 2px solid black;
     /* height: 50px; */
     width: 40%;
     margin: 20px auto;
     text-align: center;
 }
-.img1{
+
+.img1 {
     width: 30%;
     float: right;
 }
-.img2{
+
+.img2 {
     width: 30%;
     float: left;
 }
-p{
+
+p {
     /* float: right; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* clear: right; */
+}
+
+.box {
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+}
+
+.hoh {
+    width: 30%;
+    height:100%;
+    float: left;
 }

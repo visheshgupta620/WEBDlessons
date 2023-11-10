@@ -1,0 +1,19 @@
+Socket.io            ->         request response cycle nhi hoti isme (server ko socket ke server se evolve kr denge)
+ (web sockets use krte)(req bhejte http request jayegi fir pipeline ban jayegi (like permanent rhegi) aur uss pipeline ko hi socket bolte hai)      bidirectional
+
+
+
+
+
+to deploy : 
+    render site pe account
+    pehle github pe dalna jo deploy krna  (sab kuch nhi upload krna hota isliye github pe jo jo dikhana ho vo daaldenge)      
+    new pe click 
+    web service click krna
+
+
+
+start command -> npm start
+build command -> npm install
+
+env file ho to uska data btana pdega environment variables me

@@ -1,0 +1,93 @@
+REACT   ->      (POWERFUL)
+            front-end-library
+            developed by facebook
+
+SSR me reload hota hamesha page jab bhi request jati -> bandwidth increases (application gets slow)
+
+
+normal DOM ->    resource heavy operation / it is costly
+                 so , we should minimise its use .
+
+REACT -> virtual DOM
+         easy to learn
+         component based architecture
+         one way data flow
+
+Virtual DOM -> light weight DOM 
+
+component -> it is a function which return markup .
+
+
+folder me -> npx create-react-app ______ (name of app in small letters)
+
+
+index.html -> poora khali krke ek div jiski id=root
+baki bekar ki files delete
+
+
+
+component ->         class based                                function based 
+                     COMPLEX                               EASY (HOOK ane ke baad se yahi use krte sab use) 
+
+
+
+components folder bnaya aur usme sab files ka first letter capital
+
+
+
+
+
+components folder ki files --->   App.js me jayegi ---> index.js me jayegi fir 
+
+
+
+
+extensions me react es7 krke hai vo install krna
+
+
+
+rafce -> component bnane ka code ajayega
+
+
+aur uske andar hamesha single hi element hoga like hum ek div aur ek img dono dena hai
+to hume in dono ko ek div me enclose krna pdega
+ab extra div bnra hai to usko avoid krne ke liye we have fragmant <></>  isme enclose kr denge
+
+
+but hum js me html likhre isliye vscode suggest nhi krega h1 vagara so hum file ka extension .jsx krdenge fir ajayega 
+.jsx -> mixture of HTML and JS
+
+
+
+
+
+
+<Person></Person>
+<Person/>           -> self closing tag   (meaning same hai) 
+
+
+
+
+
+
+same components ko bar bar dikhate hue unka data change krna ho to we use props -> khud ke attributes bnake update krte hai  aur component me parameter me prop pass krdenge
+aur jaise ejsout dete the isme hota hai escapeto js {props.name}  (curly braces me daal denge) (curly braces me kuch bhi likh sakte js ka)
+
+
+BABEL -> js compiler 
+
+
+
+important things for react -> 
+      functions + arrow functions
+      Destructuring
+      rest + spread operator
+      map , filter , reduce
+      import / export
+      if else (turnary operators)
+
+
+
+
+
+components me bhi component ke naam ka folder bnake usme ek .jsx aur css ki file bnate (jab actually work krenge to aise hi hota)

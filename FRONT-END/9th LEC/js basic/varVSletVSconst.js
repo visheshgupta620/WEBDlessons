@@ -1,21 +1,21 @@
-var a=20;
-var a=30;
-a=50;
-console.log(a);
+// var a=20;
+// var a=30;
+// a=50;
+// console.log(a);
 
 
 
-let b=10;
-// let b=20;  //error
-b=30;
-console.log(b);
+// let b=10;
+// // let b=20;  //error
+// b=30;
+// console.log(b);
 
 
 
-const c=50;
-// const c=20; //error
-// c=30; //error
-console.log(c);
+// const c=50;
+// // const c=20; //error
+// // c=30; //error
+// console.log(c);
 
 
 
@@ -28,7 +28,7 @@ function fun(y){
         var p="inside if var";
     }
     else{
-        // console.log(x);  // error because x is let if it was var then it would give undefined
+        console.log(x);  // error because x is let if it was var then it would give undefined
         let z="inside else"
         console.log(z);
     }

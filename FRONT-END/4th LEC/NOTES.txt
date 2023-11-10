@@ -26,6 +26,7 @@ i) COLOR  ---> "green" , "#value" , "rgb(,,)" , rgba(,,,_) -> a=(0,1)
                static  (default)
         1)     relative   : relatively position badal lega , hoga to default vali jagah hi but dikhega aage so baki content uski   
                             original space ko nhi lenge (vo space khali hi dikhegi) (apne positon ke relative me krega)
+                            jis element ko relative denge vo apni hi original position ke according position krega (top bottom left right uski apni original position ke relative me work krenge)
         2)     absolute   : positon shift krega parent ke relative me but uski original space pe baki content move kar jaeyga
         3)     fixed      : fix rhega screen pe position 
         4)     sticky     :
@@ -34,7 +35,7 @@ i) COLOR  ---> "green" , "#value" , "rgb(,,)" , rgba(,,,_) -> a=(0,1)
       for eg nav tag fix krna ho aur uske upar aur data show na ho scroll krne par to usko z-index:value(100) de denge 
                taaki uske upar data overlap na kare . LIKE USKO PRIORITY ZADA MILEGI
 
-*** inline-block : display:inline-lock
+*** inline-block : display:inline-block
 
 ***   FLEXBOX :      
    1-D ME elements ko align krne me help krta 

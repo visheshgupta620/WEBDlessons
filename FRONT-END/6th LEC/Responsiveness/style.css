@@ -1,10 +1,11 @@
 .container{
      /* width: 780px;  screen size chota krne pe horizontal scroll bar ayega so px nhi use krenge*/
      width: 70%;
+     /* height: 200px; */
      border: 2px solid black;
 }
 
-@media screen and (max-width:900px){
+/* @media screen and (max-width:900px){
     .container{
         width: 90%;
     }
@@ -13,4 +14,12 @@
     .container{
         width: 100%;
     }
+} */
+
+@media screen and (max-width:1000px){
+    .container{
+        font-size: xx-small;
+        width: 20%;
+    }
+
 }

@@ -1,0 +1,59 @@
+LOCAL STORAGE   -> PERSISTANT RHEGA CHAHE PC RESTART KRDE (BROWSER ME STORE KR RHE)
+SESSION STORAGE -> RESTART KRNE PAR GAYAB (BROWSER ME STORE YE BHI BUT GAYAB HO JATA RELOAD PE BHI)
+
+
+
+
+
+
+
+
+BASICALLY react frontend ke liye use hota to jaise db nhi use krna ata ho to local STORAGE me store kra dete .
+
+localstorage.getItem()                   similar functions session storage ke liye bhi
+            .setItem()
+            .clear()
+            .removeItem()
+
+
+
+
+
+            json.parse     - string se vapis original me convert hoke ayega
+            json.stringify - string me convert hoke ayega
+
+
+
+            json.stringify krke string store hogi localstorage me to usko jab access krenge using getItem to hume usse JSON.PARSE KRNA PDEGA
+
+
+
+ ye use krne ke liye we have useEffect like useState              //jis bhi variable ya entity ko denge jab bhi uski value change hogi vo update krdega localstorage me
+    useEffect(()=>{},[dependency array])
+
+    useEffect(()=>{},[todo])               -> todo me jab bhi kuch change hoga ye function chal jayega
+
+
+
+
+
+component life cycle :     initialise,mounting,update,unmount
+
+
+jab bhi ek component mount hoga to ek baar to useEffect chlega hi chlega
+             aur uske baad dependency array me jo hoga usme changes ho tab chlega
+
+
+
+   
+
+BASICALLY 1 page applications bnate hai ab  : 
+      like link vagara pe click kre to alg page i.e. route pe nhi jana bina reload ke hi components rerender krne hote
+      to react ke sath we use react-router-dom           (third party library hai npm i krke install krte)
+
+
+      react-router-dom me humne use kiya : 
+        <link>  a tag use krte to reload hota hai hamesha to react router hume deta hai <link to='address'/> to bina reload ke khul jayega
+        routes  -> iske andar route me sare routes daalenge
+        route   -> route btayenge
+        aur bhi hai ..

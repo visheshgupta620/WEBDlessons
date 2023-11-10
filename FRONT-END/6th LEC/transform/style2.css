@@ -8,7 +8,7 @@
     border: 2px solid black;
     margin: auto; /*mid me ho jata ye krne se*/
     position: relative; /*iss se vo z index me jayega but original position pe bhi baki content nhi jayega kyunki relative hai*/
-    transition-duration: 2s;
+    transition-duration: 20s;
     transform-style: preserve-3d;
 }
 .side-a,.side-b{
@@ -33,5 +33,5 @@
     transform: rotateY(180deg);
 }
 .container:hover{
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
 }

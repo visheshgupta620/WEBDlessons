@@ -16,6 +16,9 @@ div {
     color: white;
     cursor: pointer;
     /*CURSOR BADALNE KE LIYE*/
+    position: absolute;
+    top: 20px;
+    left: 50%;
 }
 
 .btn:hover {
@@ -36,4 +39,24 @@ div p {                     /*font formatting*/
     font-weight: bolder;
     font-size: larger;
     font-style: italic;
+    
+}
+.pvala{
+    position: relative;  /* isi pvala ki original position ke relative me position dedega ab; */
+    top: 20px;
+    left: 50px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{ 
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    width: 90%;
+    z-index: 100;
 }

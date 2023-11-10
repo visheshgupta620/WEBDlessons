@@ -33,6 +33,7 @@ nav a:link{
     color: red;
     text-decoration: none;
 }
+
 nav a:visited{
     color: green;
 }
@@ -42,6 +43,7 @@ nav a:active{
 }
 nav a:hover{
     text-decoration: underline;
+    cursor:grab;
 }
 
 /* ----------------------------------------- */
@@ -57,3 +59,5 @@ ul li:after{
 }
 
  /* ----------------------------------------- */
+
+

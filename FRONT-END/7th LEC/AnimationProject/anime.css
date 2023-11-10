@@ -5,8 +5,8 @@
 .container{
     height: 100vh;
     background: url(./img/Space.png);
-    background-color: rgb(83, 83, 164);
-    position: relative;
+    background-color: rgb(83, 83, 164); 
+    /* position: relative; */
     animation:  rocketMove 4s ease-in-out forwards;
 }
 .rocket{
@@ -26,7 +26,7 @@
 }
 @keyframes rocketMove{
     100%{
-        background-position: 200% 0;
+        background-position:200% 0;
     }
 }
 @keyframes rocketupdown{

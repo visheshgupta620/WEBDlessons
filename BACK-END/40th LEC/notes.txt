@@ -1,0 +1,1 @@
+cors -> npm i cors              (axios bhejenge doosre port pe to ye dalna pdega)

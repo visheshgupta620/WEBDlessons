@@ -6,12 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         .container {
             height: 100vh;
-            background: url(data:image/jpeg;base64,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);
+            background: url(https://media.istockphoto.com/id/1165707947/photo/question-mark-concept.jpg?s=2048x2048&w=is&k=20&c=DOkNpTiXFHlqiRwpyrlOMBX33RVtej2SrZ_aWnlysLc=);
             background-repeat: no-repeat;
-            background-size:  cover ;   /*cover image me jaise horizontal size bda jata vo ho jayega*/
-            background-position: -8px -150px;  /*image ko upar neeche krne ke liye*/
+            background-size:cover
+            /* cover image me jaise horizontal size bda jata vo ho jayega */
+            /* background-position: -8px -150px;  image ko upar neeche krne ke liye */
+        }
+        .hihi{
+            /* position: absolute;
+            top: 100px;
+            left: 200px; */
+            /* position: relative;
+            bottom: 200px; */
         }
     </style>
     <title>Document</title>
@@ -21,6 +33,7 @@
     <div class="container">
 
     </div>
+    <p class="hihi">hihi</p>
 </body>
 
 </html>

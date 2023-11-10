@@ -1,0 +1,24 @@
+REACT :-
+hooks -> in-built functions
+
+   1) useState() -> array return krega (ek state aur ek function)
+
+   basically poore page ki jagah component ko render krane ke liye taki valurd change kar ske events me
+
+   aur react me state hota hai (variable ko hi bolte)
+   bbut difference ye hai isme = ya > vagara ops nhi use krte
+   sirf function ke through hi value change kar skte
+
+
+
+parent se child file me data bhejne ke liye props hi use kar skte   -> one way data flow
+
+  child se parent me data bhejne ke liye jugaad type hota :-
+        parent me function bnake child me pass krenge to jab child me with parameters call krenge to vo parent me miljayenge parameters
+
+
+
+
+react-icons ke liye alg npm
+import krna pdta react-icons/foldername se
+aur component ki tarah dete icon </>

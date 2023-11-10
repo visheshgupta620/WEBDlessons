@@ -7,9 +7,12 @@ p{                /*element selector*/
 #yo{               /*id selector*/
     color: antiquewhite;
 }
-a [href="https://facebook.com"]{
+/* a[href="https://facebook.com"]{
     color: aquamarine;
-}
+} */
 *{                 /*Universal selector*/
     color: aqua;
+}
+.links{
+    color: blueviolet;
 }
