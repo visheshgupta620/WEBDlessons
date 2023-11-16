@@ -27,23 +27,23 @@ let data = [
 ]
 
 
-// ** MAP **
+// // ** MAP **
 // let num=data.map((item,ind)=>{
-//     return '<li>$(item,price)</li>'
+//     return `<li>${item.price}</li>`;
 // })
 
 
 
-//**  FILTER  ** 
-let num=data.filter((item,ind)=>{
-    return item.price > 10;
-})
+// //**  FILTER  ** 
+// let num=data.filter((item,ind)=>{
+//     return item.price > 10;
+// })
 
 
 
-//** REDUCE  **
-// let num = arr.reduce((total, num, ind) => {
-//     return total + num;
-// }, 0)     //0 is total default value ya kuch aur bhi de skte fir vo poore ka sum dega + total ki jo initial value hai
+// //** REDUCE  **
+let num = arr.reduce((total, num, ind) => {
+    return total + num;
+}, 10)     //0 is total default value ya kuch aur bhi de skte fir vo poore ka sum dega + total ki jo initial value hai
 
 console.log(num);
